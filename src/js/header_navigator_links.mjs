@@ -1,16 +1,28 @@
+let local ="http://127.0.0.1:5500"
+let production= "/food_receipe_project"
+//get the current url
+let current_route = window.location.origin;
+let route = "";
+if (current_route == local){
+  //do nothing
+}else{
+  route = production
+}
+  
+console.log("this is your current route: "+route+"/src/html/contact.html");
 let nav_object = {
   navItems: [
     {
       label: "Home",
-      url: "/src/html/index.html",
+      url: route+"/src/html/index.html",
     },
     {
       label: "About",
-      url: "/src/html/about.html",
+      url: route+"/src/html/about.html",
     },
     {
       label: "Contact",
-      url: "/src/html/contact.html",
+      url: route+"/src/html/contact.html",
     },
   ],
 };
